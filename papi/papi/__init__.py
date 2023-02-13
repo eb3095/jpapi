@@ -24,9 +24,6 @@ class APIHandler(BaseHTTPRequestHandler):
         if self.headers["Authorization"] != f"Bearer {self.api.api_key}":
             self.return_result("Unauthorized", 401)
             return
-        if (int(self.headers["Content-Length"])) < 1:
-            self.return_result("Invalid usage, empty request", 400)
-            return
         if action == "INVALID":
             self.return_result("Invalid action", 400)
             return
