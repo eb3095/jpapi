@@ -33,7 +33,7 @@ class AIAPI(API):
 
 
 class AIAPIHandler(APIHandler):
-    def _init(self):
+    def init(self):
         GenericEndpoint(self)
 
 

@@ -14,7 +14,7 @@ class APIHandler(BaseHTTPRequestHandler):
         self._init()
         super().__init__(request, client_address, server)
 
-    def _init(self):
+    def init(self):
         pass
 
     def do(self, action):
