@@ -11,7 +11,7 @@ class APIHandler(BaseHTTPRequestHandler):
     def __init__(self, api, base, request, client_address, server):
         self.api = api
         self.base = base
-        self.init()
+        self._init()
         super().__init__(request, client_address, server)
 
     def init(self):
