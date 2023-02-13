@@ -39,9 +39,9 @@ class AIAPIHandler(APIHandler):
 
 class GenericEndpoint(Endpoint):
     def __init__(self, handler):
-        super().__init__(handler)
         self.path = "/generic/endpoint"
         self.required_fields = ["input", "another_value"]
+        super().__init__(handler)
 
     def POST(self, data):
         inp = data["input"]
