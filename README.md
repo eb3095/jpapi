@@ -5,6 +5,14 @@ Simple Python API Implementation, or "Python API"
 This is to make making python webservers for apis easy and quick. The objective is to enable
 rapid development with little overhead.
 
+# Installation
+```bash
+cd /usr/src
+git clone https://github.com/eb3095/papi.git
+cd papi/papi
+python3 setup.py install
+```
+
 # Usage example
 ```python
 import json
