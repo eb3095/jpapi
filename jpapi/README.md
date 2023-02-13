@@ -6,13 +6,6 @@ This is to make making python webservers for apis easy and quick. The objective 
 rapid development with little overhead.
 
 # Installation
-
-## PyPi
-```bash
-pip install jpapi
-```
-
-## Manual
 ```bash
 cd /usr/src
 git clone https://github.com/eb3095/jpapi.git
