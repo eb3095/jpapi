@@ -30,7 +30,6 @@ class APIHandler(BaseHTTPRequestHandler):
         if action == "INVALID":
             self.return_result("Invalid action", 400)
             return
-        d_string = self.rfile.read(int(self.headers["Content-Length"]))
         data = None
         parsed = urlparse(self.path)
         path = parsed.path.replace(self.base, "")
