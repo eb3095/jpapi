@@ -5,7 +5,7 @@ setup(
     name="papi",
     packages=find_packages(),
     version=__version__,
-    license="GPLv3",
+    license="LGPLv3",
     description="A simple API system for python",
     author="eb3095",
 )

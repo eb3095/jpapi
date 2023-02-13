@@ -34,7 +34,7 @@ class APIHandler(BaseHTTPRequestHandler):
         data = None
         parsed = urlparse(self.path)
         path = parsed.path.replace(self.base, "")
-        if action in ['GET', 'DELETE']:
+        if action in ["GET", "DELETE"]:
             data = parse_qs(parsed.query)
         else:
             if (int(self.headers["Content-Length"])) < 1:
@@ -106,12 +106,7 @@ class API:
 
 class Endpoint:
     path = None
-    required_fields = {
-        'GET': [],
-        'POST': [],
-        'PUT': [],
-        'DELETE': []
-    }
+    required_fields = {"GET": [], "POST": [], "PUT": [], "DELETE": []}
     handler = None
 
     def __init__(self, handler):
