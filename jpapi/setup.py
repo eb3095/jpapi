@@ -1,10 +1,9 @@
 from setuptools import setup, find_packages
-from version import __version__
 
 setup(
     name="jpapi",
     packages=find_packages(),
-    version=__version__,
+    version="1.0.2",
     license="LGPLv3",
     description="A simple JSON API system for python",
     author="eb3095",
