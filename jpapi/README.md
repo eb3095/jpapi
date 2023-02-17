@@ -1,11 +1,18 @@
 # jpapi
-Simple Python API Implementation using JSON, or "JSON Python API"
+Simple Python API Implementation using JSON, or "JSON Python API". Like Flask without the unneeded bits.
 
-# Description
+## Description
 This is to make making python webservers for apis easy and quick. The objective is to enable
 rapid development with little overhead.
 
-# Installation
+## Installation
+
+### PyPi
+```bash
+pip install jpapi
+```
+
+### Manual
 ```bash
 cd /usr/src
 git clone https://github.com/eb3095/jpapi.git
@@ -13,7 +20,10 @@ cd jpapi/jpapi
 python3 setup.py install
 ```
 
-# Usage example
+## Usage example
+Implementation is short and simple, as intended.
+
+### Code
 ```python
 import json
 
@@ -62,7 +72,8 @@ if __name__ == "__main__":
     main()
 ```
 
-The config is simple, and as you can see designed to work well with configs of the entire project.
+### Config
+The config is simple, and as you can see, designed to work well with configs of the entire project.
 
 ```json
 {

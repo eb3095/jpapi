@@ -1,5 +1,5 @@
 # jpapi
-Simple Python API Implementation using JSON, or "JSON Python API"
+Simple Python API Implementation using JSON, or "JSON Python API". Like Flask without the unneeded bits.
 
 ## Description
 This is to make making python webservers for apis easy and quick. The objective is to enable

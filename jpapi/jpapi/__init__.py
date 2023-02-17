@@ -114,13 +114,13 @@ class Endpoint:
             if field not in data:
                 return f"Missing field: {field}", 400
         if action == "POST":
-            return self._POST(data)
+            return self.POST(data)
         elif action == "GET":
-            return self._GET(data)
+            return self.GET(data)
         elif action == "DELETE":
-            return self._DELETE(data)
+            return self.DELETE(data)
         elif action == "PUT":
-            return self._PUT(data)
+            return self.PUT(data)
 
     def POST(self, data):
         return "Invalid action", 400
